@@ -52,7 +52,44 @@ npm run wdio
 2) set NODE_HOME Environment Variable
 
 ## Test Case 1: UI Automation using TestCafe
+    Create project in your selected editor and  run :  testcafe chrome .\test.testcafe.js
+    Output : See document "test Result.docs"
+## Test Case 2:API testing using Mocha***** test (file: test.js(under test folder))
+    run command : 1.	npm test
+     Output : See document "test Result.docs"
+## Test Case 3: Instanbul ********test coverage
+      •	command : npm i --save-dev nyc
+      •	add in package.json  :  "test": "nyc mocha"
+      •	HTML report 
+      •	add : "nyc --repoter=lcow --repoter=text-lcow nmp test"
+      •	it will create coverage folder(index.html)
+      •	run command : npm test
+      Output : See document "test Result.docs"
+## Test Case 4:Stryker.io **************Mutation testing
+    •	install - npm install -g stryker-cli
+    •	config : stryker init -  stryker.conf.js created
+    •	run : stryker run
+    Find the report here : C:\Shoppingtest\react-shopping-cart\reports\mutation\html\index.html
+    Output : See document "test Result.docs"
+## Test Case 5:Lighhouse CI ********************* Performance, Quality, correctness testing
+    1)	run command : npm install -g lighthouse
+    2)	run command : lighthouse http://localhost:3000/
+    3)	go to C:\Shoppingtest\react-shopping-cart    path  and check ./report.html file will be generated ( i.e : localhost_2020-02-15_13-00-23.report.html)
 
-1)	Create project in your selected editor and  run :  testcafe chrome .\test.testcafe.js
-Output 
+    Output : See document "test Result.docs"
+## Test Case 6:Artillery.io   ********************   In sprint Load testing ( File name : test.yml)
+    1)	Install : npm install -g artillery
+    2)	To check that the installation succeeded, run:  artillery –V
+    3)	Create yml file (artillery-> test.yml)
+    4)	run test script: artillery run filename.yml - 
+
+    Output : See document "test Result.docs"
+## Test Case 7:Clinicjs.org   ********************   monitoring against Load testing 
+    1)	npm install -g clinic
+    2)	For cannon report : npm i autocannon -g
+    3)	npm i autocannon --save
+    4)	autocannon http://localhost:3000
+
+    Output : See document "test Result.docs"
+
                      
