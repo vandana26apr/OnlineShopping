@@ -1,0 +1,13 @@
+config:
+  target: 'http://localhost:8001'
+  phases:
+    - duration: 60
+      arrivalRate: 20
+  
+scenarios:
+  - flow:
+    - get:
+        url: "/api/products"
+        match:
+           json: $.name             
+           log: "name= {{ name }}"           
