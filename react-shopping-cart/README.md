@@ -54,5 +54,5 @@ npm run wdio
 ## Test Case 1: UI Automation using TestCafe
 
 1)	Create project in your selected editor and  run :  testcafe chrome .\test.testcafe.js
-Output
+Output 
                      
